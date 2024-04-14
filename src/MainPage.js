@@ -1,22 +1,9 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-  FaGithubAlt,
-} from "react-icons/fa";
-import { MdWork, MdEmail, MdLocationOn, MdCake } from "react-icons/md";
-import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
-import { MdOutlineDocumentScanner } from "react-icons/md";
-import { MdOutlineWorkOutline } from "react-icons/md";
-import { MdOutlineAccountCircle } from "react-icons/md";
+import { FaInstagram, FaLinkedinIn, FaGithubAlt } from "react-icons/fa";
+import { MdEmail, MdLocationOn, MdCake } from "react-icons/md";
 import { IoPhonePortrait } from "react-icons/io5";
-import Project from "./components/project";
 import AboutMe from "./components/aboutme";
-import ProjectWrapper from "./components/ProjectWrapper";
 import ProjectsList from "./components/ProjectsList";
-import projects from "./files/projects_done.json";
 
 const MainPage = () => {
   return (
@@ -25,10 +12,11 @@ const MainPage = () => {
         {/* Left Panel */}
         <div className=" text-center p-8 lg:w-1/3 h-fit mt-10">
           <img
-            className="w-40 h-40 rounded-xl mx-auto -mb-16"
-            src={require("./images/heureux.jpg")}
+            className="w-60 mx-auto -mb-16 rounded-xl object-cover"
+            src={require("./images/photoPP.jpg")}
             alt="Profile"
           />
+
           <div className="bg-white pt-20 rounded-xl">
             <div className="mb-3">
               <h1 className="text-xl font-bold mt-4">Menelik Nouvellon</h1>
@@ -91,7 +79,10 @@ const MainPage = () => {
             </div>
 
             <div className="px-9 py-4">
-              <a href="./files/MENELIK_NOUVELLON_CV.pdf" download>
+              <a
+                href="/MENELIK_NOUVELLON_CV.pdf"
+                download="Menelik_Nouvellon_CV"
+              >
                 <div className="bg-red-600 text-white rounded-xl p-2 hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
                   Download CV
                 </div>
