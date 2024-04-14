@@ -10,7 +10,7 @@ const MainPage = () => {
     <div className="container mx-auto px-4">
       <div className="flex flex-col lg:flex-row">
         {/* Left Panel */}
-        <div className=" text-center p-8 lg:w-1/3 h-fit mt-10">
+        <div className=" text-center p-5 lg:w-1/3 h-fit mt-10 -ml-7">
           <img
             className="w-60 mx-auto -mb-16 rounded-xl object-cover"
             src={require("./images/photoPP.jpg")}

@@ -3,17 +3,17 @@ import logo from "./logo.svg";
 import "./App.css";
 import MainPage from "./MainPage";
 
-import backgroundVideo from "./images/background_video.mp4";
+import backgroundVideo from "./images/backgroundVideo.mp4";
 
 export default function App() {
   return (
     <div className="relative min-h-screen font-custom">
-      {/* Background Image 
+      {/* Background Image
       <img
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={require("./images/background_image1.png")}
         alt="Profile"
-      />*/}
+      /> */}
 
       {/* Background Video */}
       <video
