@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Co-founder of Mona",
+        "imgName": "Mona_logo.png",
+        "color": "#FDAC4B",            
+        "description": "Together with co-founders Rasan, Eliot, and Dzhuliia, we created Mona, an AI audio guide that personalizes museum tours, making each visit a unique, conversational experience with an expert guide tailored to the visitor's interests in art."
+      },
+    {
+      "title": "Crossword Solver",
+      "imgName": "crossword.png",
+      "color": "#FDAC4B",            
+      "description": "Our aim is to build a crossword puzzle solver that can process various clues and generate the appropriate word as the solution. We may use multi-sense embeddings or established language models like BERT to handle nuanced wordplay."
+    },
+    {
+        "title": "Cluster Theme Analysis and Auto-Annotation in Programming",
+        "imgName": "cluster_analysis.png",
+        "color": "#FDAC4B",
+        "description": "This project simplifies how teachers grade coding assignments in data science by grouping similar student work. We analyze and explain these groups using notes and results in the code notebooks, making feedback more helpful. This effort is in partnership with the ETH AI Center."
+      }
+      
+]

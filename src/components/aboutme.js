@@ -1,36 +1,49 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const AboutMe = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [sectionHeight, setSectionHeight] = useState(200);
+  const contentRef = useRef(null);
 
   const toggleExpansion = () => {
-    setIsExpanded(!isExpanded);
+    setIsExpanded((prev) => !prev);
   };
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setSectionHeight(isExpanded ? contentRef.current.scrollHeight : 200);
+    }
+  }, [isExpanded]);
 
   return (
     <div className="about-me-section">
-      <h2 className="text-3xl font-bold mb-4">About Me</h2>
+      <h2 className="text-4xl font-bold mb-4">Hello,</h2>
       <div
-        className={`${isExpanded ? "" : "max-h-96"} overflow-hidden transition-max-height duration-500 ease-in-out`}
+        ref={contentRef}
+        style={{
+          height: `${sectionHeight}px`,
+          overflow: "hidden",
+          transition: "height 0.5s ease-in-out",
+        }}
       >
-        <p>
-          Hi there! My name is <strong>Menelik</strong>, or{" "}
-          <strong>ምኒልክ</strong> in Amharic (I'm currently learning it to have
-          secret conversations with my mom). I was born in France and had the
-          opportunity to grow up in different parts of the world. These
-          experiences allowed me to meet and interact with various cultures,
-          giving me a <strong>broad perspective on life</strong> and making me
-          more <strong>confident</strong>, while also making me aware of the
-          issues that the world is facing, such as{" "}
-          <strong>poverty, inequality, and ecological disasters</strong>.
+        <p className="mt-4">
+          My name is <strong>Menelik</strong>, or <strong>ምኒልክ</strong> in
+          Amharic (I'm currently learning it to have secret conversations with
+          my mom). I was born in France and had the opportunity to grow up in
+          different parts of the world. These experiences allowed me to meet and
+          interact with various cultures, giving me a{" "}
+          <strong>broad perspective</strong> on life and making me more{" "}
+          <strong>confident</strong>, while also making me aware of the issues
+          that the world is facing, such as poverty, inequality, and ecological
+          disasters.
         </p>
         <p className="mt-4">
           My first four years were spent in Congo, and then we moved to Brazil
           where we stayed for 11 years. After that, we moved to Thailand for
           three years. Throughout my travels, I learned several languages such
           as Portuguese, French, English (C1), Spanish (B1), and a bit of
-          Italian. I'm currently learning <strong>Amharic</strong> to add to my
-          language skills.
+          Italian.
         </p>
         <p className="mt-4">
           Regarding my education, I have a Bachelor's degree in communication

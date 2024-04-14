@@ -16,6 +16,7 @@ import Project from "./components/project";
 import AboutMe from "./components/aboutme";
 import ProjectWrapper from "./components/ProjectWrapper";
 import ProjectsList from "./components/ProjectsList";
+import projects from "./files/projects_done.json";
 
 const MainPage = () => {
   return (
@@ -173,7 +174,11 @@ const MainPage = () => {
             {/**  Projects */}
             <div className="mt-8">
               <h3 className="text-3xl font-bold mb-4 ">Projects</h3>
-              <ProjectsList />
+              <h5 className="text-2xl mb-4 ">Done</h5>
+              <ProjectsList jsonFilePath={"projects_done"} />
+              <div className="border-t-2 border-gray-300 my-4"></div>
+              <h5 className="text-2xl mb-4 ">In progress</h5>
+              <ProjectsList jsonFilePath={"projects_in_progress"} />
             </div>
 
             <div></div>
