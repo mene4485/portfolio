@@ -4,6 +4,7 @@ import { MdEmail, MdLocationOn, MdCake } from "react-icons/md";
 import { IoPhonePortrait } from "react-icons/io5";
 import AboutMe from "./components/aboutme";
 import ProjectsList from "./components/ProjectsList";
+import HorizontalMenu from "./components/horizontal_menu";
 
 const MainPage = () => {
   return (
@@ -95,75 +96,16 @@ const MainPage = () => {
         <div className="lg:w-2/3 mt-40">
           {/* Container for the menu, positioned to the right */}
           <div className="flex justify-end">
-            {/* Horizontal Menu 
-            <div className="bg-white shadow-md rounded-lg p-4 mb-6 w-fit">
-              <ul className="flex space-x-10">
-                <li>
-                  <a
-                    href="#about"
-                    className="flex flex-col items-center justify-center bg-red-500 text-white rounded-lg p-2 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
-                  >
-                    <MdOutlineAccountCircle size={20} />
-                    <span>About</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#resume"
-                    className="flex flex-col items-center justify-center bg-gray-200 text-gray-800 rounded-lg p-2 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-opacity-50"
-                  >
-                    <MdOutlineDocumentScanner size={20} />
-                    <span>Resume</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#works"
-                    className="flex flex-col items-center justify-center bg-gray-200 text-gray-800 rounded-lg p-2 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:ring-opacity-50"
-                  >
-                    <MdOutlineWorkOutline size={20} />
-                    <span>Works</span>
-                  </a>
-                </li>
-              </ul>
-            </div>*/}
+            {/* Horizontal Menu */}
+            <HorizontalMenu />
           </div>
 
           <div className="text-center lg:text-left lg:p-16 bg-white rounded-lg m-3.5">
             {/* About me */}
             <AboutMe />
 
-            {/* Projects */}
-            {/* <div className="mt-8 bg-red-200 p-2">
-              <h3 className="text-2xl font-bold mb-4">Projects</h3>
-              <div className="flex flex-col bg-white p-4">
-                {/* UI/UX Design Section 
-                <div className="flex items-center mb-4">
-                  <BiBook className="text-xl" />
-                  <div className="ml-4">
-                    <h4 className="font-bold">UI/UX Design</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed diam eiusmod voluptat.
-                    </p>
-                  </div>
-                </div>
-                {/* App Development Section 
-                <div className="flex items-center">
-                  <BiMessageSquareDetail className="text-xl" />
-                  <div className="ml-4">
-                    <h4 className="font-bold">App Development</h4>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed diam eiusmod voluptat.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
             {/**  Projects */}
-            <div className="mt-8">
+            <div className="mt-8" id="projects">
               <h3 className="text-3xl font-bold mb-4 ">Projects</h3>
               <h5 className="text-2xl mb-4 ">Done</h5>
               <ProjectsList jsonFilePath={"projects_done"} />
