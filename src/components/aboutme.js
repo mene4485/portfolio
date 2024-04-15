@@ -4,6 +4,7 @@ import asinara1 from "../images/asinara1.jpg";
 import asinara2 from "../images/asinara2.jpg";
 import USC_milan from "../images/USC_milan.jpeg";
 import lauzhack_team from "../images/lauzhack_team.mp4";
+import bebelik from "../images/bebelik.jpeg";
 
 const AboutMe = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -43,13 +44,23 @@ const AboutMe = () => {
           that the world is facing, such as poverty, inequality, and ecological
           disasters 🌍.
         </p>
+
         <p className="mt-4">
           My first four years were spent in Congo, and then we moved to Brazil
           where we stayed for 11 years. After that, we moved to Thailand for
           three years. Throughout my travels, I learned several languages such
           as Portuguese, French, English (C1), Spanish (B1), and a bit of
-          Italian 🌐.
+          Italian.
         </p>
+        <br />
+        <div className="flex justify-center">
+          <img
+            src={bebelik}
+            alt="Photo of me baby looking at the horizon"
+            className="w-full w-9/12"
+          />
+          {/* <p className="text-sm mt-2 italic">Working on our Italian speech.</p> */}
+        </div>
         <p className="mt-4">
           Regarding my education, I have a Bachelor's degree in communication
           systems from EPFL, with an exchange program at Politecnico di Milano.
@@ -79,7 +90,7 @@ const AboutMe = () => {
             <img
               src={asinara1}
               alt="Photo of my sister and me working on the speech in Italian"
-              className="w-full" // Ensure the image takes up the full width of the div
+              className="w-full"
             />
             <p className="text-sm mt-2 italic">
               Working on our Italian speech.
@@ -89,7 +100,7 @@ const AboutMe = () => {
             <img
               src={asinara2}
               alt="Photo of me with my brother and sister near Asinara"
-              className="w-full" // Ensure the image takes up the full width of the div
+              className="w-full"
             />
             <p className="text-sm mt-2 italic">
               Photo taken in front of Asinara during our visit to Sardinia.
