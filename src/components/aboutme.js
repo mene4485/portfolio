@@ -23,7 +23,7 @@ const AboutMe = () => {
 
   return (
     <div className="about-me-section" id="about">
-      <h2 className="text-4xl font-bold mb-4">Hello,</h2>
+      <h2 className="text-4xl font-bold mb-4 ">Hello,</h2>
       <div
         ref={contentRef}
         style={{
@@ -31,7 +31,7 @@ const AboutMe = () => {
           overflow: "hidden",
           transition: "height 0.5s ease-in-out",
         }}
-        className="leading-relaxed"
+        className="leading-relaxed" // Right align text and add padding on small screens
       >
         <p className="mt-4 text-base italic">
           My name is <strong>Menelik</strong>, or <strong>ምኒልክ</strong> in

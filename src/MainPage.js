@@ -95,17 +95,18 @@ const MainPage = () => {
         {/* Right Panel */}
         <div className="lg:w-2/3 mt-40">
           {/* Container for the menu, positioned to the right */}
-          <div className="flex justify-end">
+
+          <div className="flex justify-end opacity-0 lg:opacity-100">
             {/* Horizontal Menu */}
             <HorizontalMenu />
           </div>
 
-          <div className="text-center lg:text-left lg:p-16 bg-white rounded-lg m-3.5">
+          <div className="text-left lg:text-left lg:p-16 p-6 bg-white rounded-lg m-3.5 -mt-64 lg:mt-0">
             {/* About me */}
             <AboutMe />
 
             {/**  Projects */}
-            <div className="mt-8" id="projects">
+            <div className="mt-8 " id="projects">
               <h3 className="text-3xl font-bold mb-4 ">Projects</h3>
               <h5 className="text-2xl mb-4 ">Done</h5>
               <ProjectsList jsonFilePath={"projects_done"} />
@@ -113,8 +114,6 @@ const MainPage = () => {
               <h5 className="text-2xl mb-4 ">In progress</h5>
               <ProjectsList jsonFilePath={"projects_in_progress"} />
             </div>
-
-            <div></div>
           </div>
         </div>
       </div>
