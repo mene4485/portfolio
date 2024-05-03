@@ -16,6 +16,14 @@
         "imgName": "cluster_analysis.png",
         "color": "#FDAC4B",
         "description": "This project simplifies how teachers grade coding assignments in data science by grouping similar student work. We analyze and explain these groups using notes and results in the code notebooks, making feedback more helpful. This effort is in partnership with the ETH AI Center."
+      },
+
+      {
+        "href" : "https://moonai.fair-lab.com/",
+        "title": "Development team of Moonai",
+        "imgName": "Moonai_logo.png",
+        "color": "#FDAC4B",
+        "description": "I am part of the development team of Moonai, a platform for VC investors to filter and analyze startups. We provide insights on the startup's market, team, and technology, helping investors make informed decisions. Our goal is to fasten the due diligence process and increase the success rate of investments. Moonai is affiliated with ETH AI Center."
       }
       
 ]
