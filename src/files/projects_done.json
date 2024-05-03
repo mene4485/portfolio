@@ -36,5 +36,12 @@
             "title": "Data Augmentation (for SS)",
             "imgName": "DA_SS.jpeg",
             "color": "#D69F7E",            "description": "For a university project, I contributed to the development of a data augmentation pipeline, focusing on its impact on the performance of semantic segmentation (SS) models."
+          },
+
+          {
+            "href": "https://github.com/RasanYo/MissingMigrants",
+            "title": "Hackhaton 2nd place Technical Excellence",
+            "imgName": "MissingMigrants.jpeg",
+            "color": "#D69F7E",            "description": "In around 30 hours, we developed a AI-driven tool designed to aid the International Organization for Migration (IOM) in rapidly gathering and summarizing multilingual news. The goal is to provide quick and accurate insights into global events involving migrants, tailored to the IOM's data verification needs. This helps IOM gather information more efficiently and effectively, enabling them to better count and assist migrants worldwide."
           }
 ]
