@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.120114b4.css",
-    "main.js": "/portfolio/static/js/main.9681e1a8.js",
-    "static/js/788.0238a48d.chunk.js": "/portfolio/static/js/788.0238a48d.chunk.js",
+    "main.js": "/portfolio/static/js/main.c623467e.js",
+    "static/js/788.146b94ae.chunk.js": "/portfolio/static/js/788.146b94ae.chunk.js",
     "static/js/183.53d82b13.chunk.js": "/portfolio/static/js/183.53d82b13.chunk.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
     "static/media/Draft_3_PRTCL_TEASER.mp4": "/portfolio/static/media/Draft_3_PRTCL_TEASER.6e5ed263915b24772232.mp4",
@@ -28,6 +28,7 @@
     "static/media/USC_milan.jpeg": "/portfolio/static/media/USC_milan.d12dd4eeb35f5a6fd986.jpeg",
     "static/media/photo_cv.jpeg": "/portfolio/static/media/photo_cv.f5f0d8cf1e2802555f95.jpeg",
     "static/media/Mona_logo.png": "/portfolio/static/media/Mona_logo.364391cd4ed82e5a4737.png",
+    "static/media/MissingMigrants.jpeg": "/portfolio/static/media/MissingMigrants.26ec2057030aa9a0c1d9.jpeg",
     "static/media/cluster_analysis.png": "/portfolio/static/media/cluster_analysis.db877ec6207807026218.png",
     "static/media/DA_SS.jpeg": "/portfolio/static/media/DA_SS.4ac95d9d90fc5c44f7d7.jpeg",
     "static/media/prtcl_3.png": "/portfolio/static/media/prtcl_3.7971d827288a965c1e34.png",
@@ -37,11 +38,11 @@
     "index.html": "/portfolio/index.html",
     "static/media/snake.webp": "/portfolio/static/media/snake.77c1a698912cc67454cd.webp",
     "main.120114b4.css.map": "/portfolio/static/css/main.120114b4.css.map",
-    "main.9681e1a8.js.map": "/portfolio/static/js/main.9681e1a8.js.map",
+    "main.c623467e.js.map": "/portfolio/static/js/main.c623467e.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.120114b4.css",
-    "static/js/main.9681e1a8.js"
+    "static/js/main.c623467e.js"
   ]
 }
