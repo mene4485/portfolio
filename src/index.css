@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('./assets/SF-Pro-Display-Black.otf') format('otf'),
+         url('./assets/SF-Pro-Display-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+  }
+  
+  html {
+     scroll-behavior: smooth;
+   }
+   

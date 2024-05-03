@@ -10,7 +10,12 @@ const Project = ({ href, title, imgName, color }) => {
           src={require("../images/" + imgName)}
           alt={title}
         />
-        <div className={`absolute bottom-0 left-0 w-full pl-3 py-1 ${color}`}>
+        <div
+          className={"absolute bottom-0 left-0 w-full pl-3 py-1"}
+          style={{
+            backgroundColor: color,
+          }}
+        >
           <h4 className="font-bold text-lg text-black">{title}</h4>
         </div>
       </a>

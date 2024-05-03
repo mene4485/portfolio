@@ -7,13 +7,13 @@ import backgroundVideo from "./images/backgroundVideo.mp4";
 
 export default function App() {
   return (
-    <div className="relative min-h-screen">
-      {/* Background Image 
+    <div className="relative min-h-screen font-custom">
+      {/* Background Image
       <img
         className="absolute top-0 left-0 w-full h-full object-cover"
         src={require("./images/background_image1.png")}
         alt="Profile"
-      />*/}
+      /> */}
 
       {/* Background Video */}
       <video
